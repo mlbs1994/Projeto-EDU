@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+                border-color: #E7E84A;
+                background-color: rgb(32, 161, 241);
+            }
+
+            .tile {  
+                width: 100%;
+                display: inline-block;
+                box-sizing: border-box;
+                background: #fff;		
+                padding: 20px;
+                margin-bottom: 30px;
+            } 
+
+            .title {
+                margin-top: 0px;
+            }
+
+            .purple, .blue, .red, .orange, .green, .ligthblue {
+                color: #fff;
+            }
+
+            .purple {
+                background: #5133AB;
+            }
+
+            .purple:hover {
+                background: darken(#5133AB, 10%);
+            }	
+
+            .red { background: #AC193D;}
+
+            .red:hover {
+                background: darken(#AC193D, 10%);
+            }		
+
+
+            .green {background: #00A600;}
+
+            .green:hover {
+                background: darken(#00A600, 10%);
+            }		
+
+
+            .blue {   background: #2672EC; transition: 1s ease;}
+
+            .blue:hover {
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                transition: 1s ease;
+            }	
+
+            .ligthblue {   background: lightskyblue; transition: 1s ease;}
+
+            .ligthblue:hover {
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                transition: 1s ease;
+            }	
+
+            .orange {  background: #DC572E;transition: 1s ease;}
+
+            .orange:hover {
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                transition: 1s ease;
+            }
+        </style>
+    </head>
+    <body style="background-color: transparent;">
+         <div class="col-sm-4" style="width: 300px;" onclick="parent.content.location.href='CadastrarAluno.html';">
+            <div class="tile blue">
+                <center> <img class="top" src="Images/User-Executive-Green-icon.png" alt="" style="width:200px;" /></center>
+                <h4><center>Usuários</center></h4>
+            </div>
+        </div>    
+         <div class="col-sm-4" style="width: 300px;">
+            <div class="tile orange">
+                <center> <img class="top" src="Images/Students-icon.png" alt="" style="width:200px;" /></center>
+                <h4><center>Turmas</center></h4>
+            </div>
+        </div>  
+        <div class="col-sm-4" style="width: 300px;">
+            <div class="tile ligthblue">
+                <center> <img class="top" src="Images/Student-Male-icon.png" alt="" style="width:200px;" /></center>
+                <h4><center>Alunos</center></h4>
+            </div>
+        </div> 
+
+    </body>
+</html>
