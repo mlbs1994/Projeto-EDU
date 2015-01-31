@@ -16,52 +16,105 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #leftArea {
+                background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 0%, #7db9e8 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#2989d8), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, #1e5799 0%,#2989d8 0%,#7db9e8 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 0%,#7db9e8 100%); /* IE10+ */
+                background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+            }
+        </style>
     </head>
 
     <body>
-        <div id="greetingsArea" style="background-color: white;height: 100%; width: 100%; position: absolute;"> 
-            
-            <div id="greetingsTitle"  style=" background-color: green;  position: absolute; font-family: Tahoma; left: 25%; color: white; 
-                 font-size: 20px; ">
+        <div id="greetingsArea" style=" display: table; background-repeat: no-repeat;
+             height: 100%; width: 100%; position: fixed;"> 
+
+            <div id="greetingsBackImage" style="background-image: url(Images/SecretariaEducao.jpg); 
+                 height: 500px; width: 700px; opacity: 0.3; background-repeat: no-repeat;">
+
+            </div>
+
+            <div id="greetingsTitle"  style=" display: table-cell; position: fixed; font-family: Tahoma; 
+                 left: 23%; top: 3%; color: black; font-size: 45px; ">
                 Seja bem vindo ao EDU!
             </div>
-            
-            <div id="greetingsImages" style="background-color: #AC193D; color: white; position: absolute; bottom: 70%; left: 33%;">
-                Imagens aqui
+
+            <div id="greetingsImages" style="display: table-cell; color: white;
+                 font-size: 50px; position: fixed;">
+                <div id="imgCentral" style=" bottom: 60%; left: 30%; display: table-cell; position: fixed;">
+                    <img src="Images/ImagemEDU3.jpg" style="width: 250px; height: 150px; ">
+                </div>
+                <div id="imgLeft" style=" bottom: 40%; left: 15%; display: table-cell; position: fixed;">
+                    <img src="Images/ImagemEDU2.jpg" style="width: 250px; height: 150px; z-index: 1;">
+                </div>
+                <div id="imgRight" style=" bottom: 40%; right: 37%; display: table-cell; position: fixed;">
+                    <img src="Images/ImagemEDU1.jpg" style="width: 250px; height: 150px; z-index: 1; top: 50%;">
+                </div>    
             </div>
-            
-            <div id="greetingsText" style="background-color: black; color: white; position: absolute; bottom: 30%; left: 15%; font-size: 9px;">
-                Matriculem seus alunos em seu sistemas ou até eles mesmos podem se matricular de suas casas!<br>
-                Facilite e organize o acesso e o armazenamento das informações necessárias para a sua escola.<br>
-                Agradecemos por nos escolher para ajudar no seu desenvolvimento tecnológico escolar!<br>
+
+            <div id="greetingsText" style=" display: table-cell;  color: black;
+                 position: fixed; bottom: 20%; left: 5%; font-size: 18px; font-family: Arial Black;">
+                <b>Matriculem seus alunos em seu sistemas ou até eles mesmos podem se matricular de suas casas!</b><br>
+                <b>Facilite e organize o acesso e o armazenamento das informações necessárias para a sua escola.</b><br>
+                <b>Agradecemos por nos escolher para ajudar no seu desenvolvimento tecnológico escolar!</b><br>
             </div>
-            
-            <div id="leftArea" style="width: 20%; height: 100%; position: absolute; left: 80%; background-color: darkblue;">    
-                <div id="logoBar" style="background-color: inherit; color: white; position: absolute; height: 20%; width: 100%; 
+
+            <div id="leftArea" style="width: 20%; height: 100%; position: fixed; left: 80%; top: 0%; ">    
+                <div id="logoBar" style="background-color: inherit; color: white; position: absolute; height: 100px; width: 100%; 
                      z-index: 1;">
-                   EDU Logo
+                    <img src="Images/edulogo.gif" style="position: absolute; height: 200px; width: 200px; left: 15%; top: 3%;">
                 </div>
-                
-                <div id="loginBar" style=" background-color: inherit; color: white; display: table; position: relative; height: 100%;
-                    top: 5%; width: 100%; color: white; font-size: 8px; text-align: center;" >
-                    <br><br><br><br><br>Escolha o seu módulo:<br><br>
-                    <div id="moduleImage" style=" display: table-cell; height: 18%; width: 50%; 
-                         color: white; background-color: blueviolet; position: absolute; 
-                         text-align: center; vertical-align: central; margin-left: 40px;">
-                        Imagem do Módulo<br>
+                <div id="loginBar" style=" background-color: inherit; color: white; display: table; position: fixed; height: 100%;
+                     top: 5%; width: 100%; color: white; font-size: 8px; text-align: center;" >
+                    <div id="moduleImage" style=" display: table-cell; height: 200px; width: 200px; 
+                         color: white; background-color: gray; position: fixed; 
+                         text-align: center; vertical-align: central; left: 83%; top: 15%;">
+                        <img src="Images/User-Executive-Green-icon.png" alt="Escolha o módulo" 
+                             style=" height: 200px; width: 200px; ">
                     </div>
-                    
-                    <div id="formArea" style="background-color: aqua; position: absolute; height: 125px; 
-                         width: 75%; display: table-cell; vertical-align: central; margin-left: 20px; top: 45%;">
-                        Formulário aqui!
+                    <div id="escolhaModuloLabel" style="position: fixed; left:81.5%; top: 50%; color: white;font-size: large;">
+                        Escolha o seu módulo:
+                    </div> 
+                    <div id="dropdownSelectModule" style=" position: fixed; height: 45px; width: 200px;
+                         display: table-cell; left:81.5%; top: 54%; z-index: 4;" >
+                        <select class="form-control input-sm" style="color: black; width: 240px; height: 30px; font-size: 18px;">
+                            <option>Aluno</option>
+                            <option>Professor</option>
+                            <option>Secretário Escolar</option>
+                            <option>Secretário Municipal</option>>
+                        </select>
+                    </div>
+
+                    <div id="formArea" style=" position: fixed; height: 230px; 
+                         width: 240px; display: table-cell; vertical-align: central; left: 81.5%; top: 60%;">
+                        <form>
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon" style="width: 65px;">Login</div>
+                                        <input type="text" class="form-control" id="exampleInputAmount">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon" style="height: 34px;" >Senha</div>
+                                        <input type="text" class="form-control" id="exampleInputAmount">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <button type="submit" class="btn btn-primary">Iniciar Sessão</button>
+                            </form>
                     </div>
                 </div>
-                
+
             </div>
-            
-            <div id="bottomBar" style="background-color: gray; position: absolute; width: 100%; height: 10%; bottom: 0%; ">
-               Desenvolvido por Núcleo de Desenvolvimento</div>
-            
+
+            <div id="bottomBar" style=" display:table-cell; font-size: 20px; background-color: gray; position: fixed; width: 100%; height: 85px; bottom: -5%; ">
+                <b>Desenvolvido por Núcleo de Desenvolvimento</b></div>
         </div>    
     </body>
 </html>
